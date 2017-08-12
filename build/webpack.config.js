@@ -38,7 +38,6 @@ const developmentConf = merge(baseConfig, {
       filename: 'index.html',
       template: resolve('src/index.html'),
       hash: false,
-      // excludeChunks: 'appcache/manifest.appcache',
       inject: true,
       minify: {
         removeComments: true, // 移除HTML中的注释
@@ -57,13 +56,7 @@ const developmentConf = merge(baseConfig, {
       cache: false,
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
-    }),
-    new CommonsChunkPlugin({
-      // name: ['mainifest'], // 将公共模块提取, 参照 entry
-      name: ['vendor', 'mainifest'], // 将公共模块提取, 参照 entry
-      minChunks: Infinity // 提取所有entry共同依赖的模块
     })
-    // new ExtractTextPlugin('css/[name].[hash].css')
   ],
   devtool: 'cheap-module-eval-source-map',
   devServer: {

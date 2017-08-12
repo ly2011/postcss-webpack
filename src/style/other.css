@@ -5,3 +5,84 @@
   color: #666;
   background-color: #fff;
 }
+
+.phone {
+  &_title {
+    width: 500px;
+
+    @media (max-width: 500px) {
+      width: auto;
+    }
+
+    body.is_dark & {
+      color: white;
+    }
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.a {
+  .b {
+    color: block;
+  }
+}
+
+.cfx {
+  @util clearfix;
+}
+
+.rounded-top {
+  @util border-top-radius(4px);
+}
+
+@util no-hover {
+  .box {
+    background-color: #666;
+  }
+}
+
+.child {
+  @util center;
+}
+
+.center {
+  @util center-block;
+}
+
+.circle {
+  @util circle(200px, #268BD2);
+}
+
+hr {
+  @util hr(#000,20px);
+}
+
+ul {
+  @util reset-list;
+
+  background-color: #fff;
+}
+
+.foo {
+  @util reset-text;
+}
+
+.footer {
+  @util sticky-footer(100px);
+}
+
+.text-content {
+  /* @util text-hide; */
+  @util word-wrap;
+}
+
+.triangle-up {
+  @util triangle(20px, blue,up);
+}
+
+.box-16-9 {
+  @util aspect-ratio(16:9);
+}

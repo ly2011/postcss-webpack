@@ -17,15 +17,8 @@
     "node": ">=6.5",
     "npm": ">=3.10"
   },
-  "browserslist": [
-    ">1%",
-    "last 4 versions",
-    "Firefox ESR",
-    "not ie < 9"
-  ],
-  "keywords": [
-    "postcss"
-  ],
+  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+  "keywords": ["postcss"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -66,6 +59,7 @@
     "postcss-nested-props": "^1.1.7",
     "postcss-reporter": "^5.0.0",
     "postcss-scss": "^1.0.2",
+    "postcss-utilities": "^0.7.0",
     "precss": "^2.0.0",
     "style-loader": "^0.18.2",
     "stylefmt": "^6.0.0",
@@ -80,10 +74,7 @@
     "webpack-parallel-uglify-plugin": "^1.0.0"
   },
   "lint-staged": {
-    "*.js": [
-      "npm run fix",
-      "git add"
-    ]
+    "*.js": ["npm run fix", "git add"]
   },
   "dependencies": {
     "postcss-smart-import": "^0.7.5"

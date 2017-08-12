@@ -44,18 +44,7 @@ module.exports = {
       '.tsx'
     ],
     alias: {
-      '~root': rootPath,
-      SRC: resolve('src'),
-      ASSETS: resolve('src/assets'),
-      COMPONENTS: resolve('src/components'),
-      ACTIONS: resolve('src/actions'),
-      CONSTANTS: resolve('src/constants'),
-      CONTAINERS: resolve('src/containers'),
-      MIDDLEWARE: resolve('src/middleware'),
-      REDUCERS: resolve('src/reducers'),
-      STORE: resolve('src/store'),
-      ROUTES: resolve('src/routes'),
-      VIEWS: resolve('src/views')
+      '~root': rootPath
     }
   },
   resolveLoader: {

@@ -4,6 +4,11 @@
   --main-font-size: 16px;
 }
 
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
 html,
 body {
   font-size: var(--main-font-size);
